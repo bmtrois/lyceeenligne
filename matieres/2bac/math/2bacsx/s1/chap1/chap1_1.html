@@ -18,11 +18,28 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+
+			#rcorners1 {
+					border-radius: 25px;
+					background: #73AD21;
+					padding: 20px;
+					width: 600px;
+					height: 80px; }
+			#rcorners2 {
+ 					border-radius: 25px;
+  					border: 2px solid #73AD21;
+  					padding: 20px;
+  					width: 500px;
+					height: 120px;} 
+
         </style>
 
 	<script>
 		function loadInIframe(url) {
 			document.getElementById('Frame1').src = url;
+		}	
+		function loadInIframe2(url) {
+			document.getElementById('Frame2').src = url;
 		}			
 	</script>
 
@@ -41,7 +58,7 @@
 			<td><center><font color="#FFFFFF" size=5>S&eacuteance</font></center></td><td><center><font color="#FFFFFF" size=5>Contenu</font></center></td><td><center><font color="#FFFFFF" size=5>Remarque</font></center></td>
 		</tr>
 		<tr>
-			<td></td><td><h3><u><center><br><font color="#000066">Chapitre 01: Continuit&eacute <br>d'une fonction num&eacuterique</font></center></u></h3><br><br>
+			<td></td><td><h3><u><center><br><font color="#000066"><p id="rcorners2">Chapitre 01: Continuit&eacute <br>d'une fonction num&eacuterique</p></font></center></u></h3>
 				<hr><h2 id="Limites"></h2><br>
 											
 									<ul>
@@ -54,22 +71,17 @@
 													<iframe id="Frame1" width="640" height="360" src="https://www.youtube.com/embed/3dU-Yxfz1Ro?si=0no_MTZTkZRHUOGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 													<br><br>
 											</li>
+											<h2 id="cont"></h2>
 											<li><b><font color="#FF0000">Continuit&eacute et Continuit&eacute &agrave droite et &agrave gauche d'une fonction en un point X<sub>0</sub></font></b><br>
 												<br>
-													<font color="#007700">A.Continuit&eacute d'une fonction en un point X<sub>0</sub></font><br>
-													<br>
-													<iframe width="640" height="360" src="https://www.youtube.com/embed/1JVdJWQC6z8?si=AjZuQloGZs4j1PPC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-													</iframe>
-											</li>
-											<br>											
-													<font color="#007700">B.Continuit&eacute &agrave droite et &agrave gauche d'une fonction en un point X<sub>0</sub></font><br>
-													<br>
-													<iframe width="640" height="360" src="https://www.youtube.com/embed/TVIfPaWTx10?si=f1KRfUBa1porS7Zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-													</iframe>
-													<Br><br>
-													<b><i>Propro&eacutet&eacute et exemples: </b></i><br><br><iframe width="640" height="360" src="https://www.youtube.com/embed/EQPL-1B2gn0?si=0tM3EiCY-TxW_u5J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>											
-											<br><br>
-											<br>											
+													<a href="#cont" onclick="loadInIframe2('https://www.youtube.com/embed/1JVdJWQC6z8?si=AjZuQloGZs4j1PPC')"><font color="#007700">A.Continuit&eacute d'une fonction en un point X<sub>0</sub></font>  -  </a><br>
+													<a href="#cont" onclick="loadInIframe2('https://www.youtube.com/embed/TVIfPaWTx10?si=f1KRfUBa1porS7Zc')"> <font color="#007700">B.Continuit&eacute &agrave droite et &agrave gauche d'une fonction en un point X<sub>0</sub></font>  </a><br>
+													<a href="#cont" onclick="loadInIframe2('https://www.youtube.com/embed/EQPL-1B2gn0?si=0tM3EiCY-TxW_u5J')"> <font color="#000000"><i>Propro&eacutet&eacute et exemples:</i></font>  </a>
+													
+													<br><br>
+													<iframe id="Frame2" width="640" height="360" src="https://www.youtube.com/embed/1JVdJWQC6z8?si=AjZuQloGZs4j1PPC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+													<br><br>
+												<hr>										
 										</ul>
 				<td><center>SP; SVT<br><br ><b><i>Pour plus <br><br>des exercices<br><br> Sur cette partie<br><br> <a href=https://galilee.ac/mod/book/view.php?id=1403 target="_blank">cliquez ici</a></b></i></center><br></td>							
 		</tr>

@@ -19,8 +19,33 @@
                 font-family: 'Nunito', sans-serif;
             }
 			h3{ color:rgb(166, 13, 13)}
-			h4{ color:rgb(23, 99, 23)}
+			h6{ color:rgb(23, 99, 23)}
+
+			#rcorners1 {
+					border-radius: 25px;
+					background: #73AD21;
+					padding: 20px;
+					width: 600px;
+					height: 80px; }
+			#rcorners2 {
+ 					border-radius: 25px;
+  					border: 2px solid #73AD21;
+  					padding: 20px;
+  					width: 500px;
+					height: 80px;} 
+
         </style>
+		<script>
+			function loadInIframe(url) {
+				document.getElementById('Frame1').src = url;
+			}	
+			function loadInIframe2(url) {
+				document.getElementById('Exces').src = url;
+			}		
+			function loadInIframe3(url) {
+				document.getElementById('CoEx').src = url;
+			}
+		</script>
     </head>
 	<body background="../../../../../../bg/bg1.avif">
     <center><img src="../../../../../../bg/logoozte.png" alt="logoozte" width="870" height="90" align="center"></center>
@@ -36,31 +61,69 @@
 			<td><center><font color="#FFFFFF" size=5>S&eacuteance</font></center></td><td><center><font color="#FFFFFF" size=5>Contenu</font></center></td><td><center><font color="#FFFFFF" size=5>Remarque</font></center></td>
 		</tr>
 		<tr>
-			<td></td><td><h2><u><center><br><font color="#000066">Chapitre 03: Les suites num&eacuteriques</font></center></u></h2>
-										<ul>
-											<li><b><h3>Rapels :</h3></b>
-												<h4>1- R&eacutesumm&eacute: Suite arithm&eacutetique - suite g&eacuteom&eacutetrique <br>- Monotonie d'une suite<br> - Suite major&eacutee - Suite minor&eacutee - Suite born&eacutee :</h4>
-												<iframe width="640" height="360" src="https://www.youtube.com/embed/arUvUcG9UuA?si=5HtPVSH2UJX_B6pL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-												<h4>2- La récurance :</h4>
-												<iframe width="640" height="360" src="https://www.youtube.com/embed/_dsqEprOpk8?si=O_cPeG8okHmCVTGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-												<h4>3- Calcucl de termes - Monotonie d'une suite <br>- Théorème de la convergence monotone </h4>
-												<iframe width="640" height="360" src="https://www.youtube.com/embed/czAlKlF4axM?si=TGE8o_2zMw1MPp1G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-			
-												<h4>4- Suite arithm&eacutetique, Terme g&eacuten&eacuteral d'une suite arithm&eacutetique,<br>Limite d'une suite num&eacuterique: </h4>
-												<iframe width="640" height="360" src="https://www.youtube.com/embed/vKtqTHd3ciM?si=O5-TPHVx9BXkuLK6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-												
-												<h4>5- Suite g&eacuteom&eacutetrique, Terme g&eacuten&eacuteral d'une suite g&eacuteom&eacutetrique,<br>Limite d'une suite :</h4>
-												<iframe width="640" height="360" src="https://www.youtube.com/embed/LIpipP5RHq0?si=4SFGlnrP7HczD3gL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<td></td><td><h3><u><center><br><font color="#000066"><p id="rcorners2">Chapitre 03: Les suites num&eacuteriques<br></p></font></center></u></h3>
+				<hr>
 				
-												<h4>6- Suites particulières: U<sub>n</sub> = a<sup>n</sup> ; V<sub>n</sub> = f(U<sub>n</sub>) </h4>
-												<iframe src="https://player.vimeo.com/video/537383197?h=9be0d7abfd" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+				
+												<h2 id="Rappel"></h2><br>
+										<ul>
+											<li><b><font color="#FF0000">Rappels :</font></b><br>
+												<b>
+													<font color="#007700">- Vidéo 1: </b></font><a href="#Rappel" onclick="loadInIframe('https://www.youtube.com/embed/arUvUcG9UuA?si=5HtPVSH2UJX_B6pL')"> R&eacutesumm&eacute (Suite arithm&eacutetique - suite g&eacuteom&eacutetrique - Monotonie d'une suite<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Suite major&eacutee - Suite minor&eacutee - Suite born&eacutee)</a><br>
+													<b>
+													<font color="#007700">- Vidéo 2: </b></font><a href="#Rappel" onclick="loadInIframe('https://www.youtube.com/embed/_dsqEprOpk8?si=O_cPeG8okHmCVTGc')"> La récurance  </a>
+													<br><b>
+													<font color="#007700">- Vidéo 3:</b> </font><a href="#Rappel" onclick="loadInIframe('https://www.youtube.com/embed/czAlKlF4axM?si=TGE8o_2zMw1MPp1G')"> Calcucl de termes - Monotonie d'une suite <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Théorème de la convergence monotone  </a>
+													<br><b>
+													<font color="#007700">- Vidéo 4:</b> </font><a href="#Rappel" onclick="loadInIframe('https://www.youtube.com/embed/vKtqTHd3ciM?si=O5-TPHVx9BXkuLK6')"> Suite arithm&eacutetique, Terme g&eacuten&eacuteral d'une suite arithm&eacutetique,<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Théorème de la convergence monotone  </a>
+													<br><b>
+													<font color="#007700">- Vidéo 5:</b> </font><a href="#Rappel" onclick="loadInIframe('https://www.youtube.com/embed/LIpipP5RHq0?si=4SFGlnrP7HczD3gL')"> Suite g&eacuteom&eacutetrique, Terme g&eacuten&eacuteral d'une suite g&eacuteom&eacutetrique, <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Limite d'une suite num&eacuterique  </a>
+													<br><b>
+													<font color="#007700">- Vidéo 6:</b> </font><a href="#Rappel" onclick="loadInIframe('https://player.vimeo.com/video/537383197?h=9be0d7abfd')"> Suites particulières: U<sub>n</sub> = a<sup>n</sup> ; V<sub>n</sub> = f(U<sub>n</sub>)  </a>
+													<br>
+													
+													<iframe id="Frame1" width="640" height="360" src="https://www.youtube.com/embed/arUvUcG9UuA?si=5HtPVSH2UJX_B6pL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+													<br><br>
+
 								
+											</li>
+											<br>
+											<li><b><h5><font color="#FF0000">TD :</font></b></h5>
+												
+												<h2 id="Exercices"></h2>
+												<h6>- Exercices corrig&eacutes:</h6>
+												<b>
+													&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Exercices" onclick="loadInIframe2('https://player.vimeo.com/video/533112499?h=2fe240f85e')">- Vidéo 1</a>
+													&nbsp<a href="#Exercices" onclick="loadInIframe2('https://player.vimeo.com/video/537380334?h=fc7c74a05b')">- Vidéo 2</a>
+												</b>	
+											<br><br>
+												<iframe id="Exces" width="640" height="360" src="https://player.vimeo.com/video/533112499?h=2fe240f85e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+											<br>
+											<h2 id="CorrExam"></h2><br>
+											<h6>- Correction des exercices (Suites Num&eacuteriques) des examens:</h6>
+											<b>
+												&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#CorrExam" onclick="loadInIframe3('https://www.youtube.com/embed/aIaZ7_c0oxY?si=_tbwFCnfsZ3uoI93')">- Vidéo 1</a>
+												<a href="#CorrExam" onclick="loadInIframe3('https://www.youtube.com/embed/wXGsw_meVIM?si=S7tX0FwyuF6ELSC6')">- Vidéo 2</a>
+												<a href="#CorrExam" onclick="loadInIframe3('https://www.youtube.com/embed/ee7jhbCnRDg?si=ccudiZlsTm7AyhBt')">- Vidéo 3</a>
+												<a href="#CorrExam" onclick="loadInIframe3('https://www.youtube.com/embed/mEP_oL4NUZ8?si=mDBXVFd9lKdzwbCU')">- Vidéo 4</a>
+												<a href="#CorrExam" onclick="loadInIframe3('https://www.youtube.com/embed/_4I0OnlY6H4?si=-D2hcb0KmYbv82w1')">- Vidéo 5</a>
+												<a href="#CorrExam" onclick="loadInIframe3('https://www.youtube.com/embed/k83tbKfQ_9E?si=ck3C6AQAWK3mPbyG')">- Vidéo 6</a>
+												<a href="#CorrExam" onclick="loadInIframe3('https://www.youtube.com/embed/eZc6tZTjIU0?si=Z6BAKgtgOED3U7WI')">- Vidéo 7</a>
+												<a href="#CorrExam" onclick="loadInIframe3('https://www.youtube.com/embed/4QZvwhXghrI?si=6ZC2BKlTSSgP1pRj')">- Vidéo 8</a>
+											</b>
+											<br><br>
+												<iframe id="CoEx" width="640" height="360" src="https://www.youtube.com/embed/aIaZ7_c0oxY?si=_tbwFCnfsZ3uoI93" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+											<br><br>
 											</li><br>
-							
+											
+											
+											
+							<hr>
 										</ul>
 				<td></td>							
 		</tr>
-		<tr><td></td><td><center><b><i>Page suivante</b></i></center></td><td><center><a href="../chap3/chap3_2.html"><img src="../../../../../../bg/suivant.gif" alt="suivant" width="40" height="40" align="center"></a></center></td>	
+		<tr><td><center><a href="../chap2/chap2_4.html"><img src="../../../../../..//bg/precedent.gif" alt="suivant" width="40" height="40" align="center"></a></center></td><td><center><b><i>Page Pr&eacutec&eacutedente  //  Page suivante</b></i></center></td><td><center><a href="../chap4/4_1.html"><b><i><u>Chap 4</u></i></b><br><img src="../../../../../../bg/suivant.gif" alt="suivant" width="40" height="40" align="center"></a></center></td>
+		
 	</table>
 
 	</body>
