@@ -1,23 +1,19 @@
 
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <!-- CSS Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- JavaScript et Popper.js (pour les fonctionnalités comme les menus déroulants et les infobulles) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-		
-		
-		
-		<meta charset="utf-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Mateh&eacutematique 2 Bac Sx Chap 8</title>
+		<script>
+		function loadInIframe(url) 
+			{
+				document.getElementById('Exemples').src = url;
+			}
+		</script>
+        <title>Mateh&eacutematique 2 Bac Sx Chap 4</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		
 
         <!-- Styles -->
         <style>
@@ -28,6 +24,9 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+			h5{ color:rgb(166, 13, 13)}
+			h6{ color:#032264}
+
 			#rcorners1 {
 					border-radius: 25px;
 					background: #73AD21;
@@ -38,19 +37,9 @@
  					border-radius: 25px;
   					border: 2px solid #73AD21;
   					padding: 20px;
-  					width: 600px;
+  					width: 650px;
 					height: 80px;} 
         </style>
-		<script>
-			function loadInIframe(url) {
-				document.getElementById('Frame1').src = url;
-			}			
-		</script>
-		<script>
-			function loadInIframe2(url) {
-				document.getElementById('Frame2').src = url;
-			}			
-		</script>
     </head>
 	<body background="../../../../../../bg/bg1.avif">
     <center><img src="../../../../../../bg/logoozte.png" alt="logoozte" width="870" height="90" align="center"></center>
@@ -66,33 +55,39 @@
 			<td><center><font color="#FFFFFF" size=5>S&eacuteance</font></center></td><td><center><font color="#FFFFFF" size=5>Contenu</font></center></td><td><center><font color="#FFFFFF" size=5>Remarque</font></center></td>
 		</tr>
 		<tr>
-			
-			<td></td><td><h3><u><center><br><font color="#000066"><p id="rcorners2">Chapitre 09: G&eacuteom&eacutetrie dans l'espace</p></font></center></u></h3>	
-										<hr><ul>
-											<h2 id="Rappel"></h2>
-											<li><b><font color="#FF0000">G&eacuteom&eacutetrie dans l'espace:</font></b> <br>
-												<b>
-													
-													<a href="#Rappel" onclick="loadInIframe('https://www.youtube.com/embed/L__igVGAb9o?si=kauuWNWqAvh0GoO7')">- Vidéo 1: M&eacutethodes de r&eacutesolution d'exercices</a><br>
-													<a href="#Rappel" onclick="loadInIframe('https://www.youtube.com/embed/PoHhLChzHCc?si=y71l3j0ScMevKIuq')"> - Vidéo 2: Le produit scalaire dans l'espace (partie1)</a><br>
-													<a href="#Rappel" onclick="loadInIframe('https://www.youtube.com/embed/8X6vJ-9vI-8?si=tEKnd1sim_Sitp4H')">- Vidéo 3: Le produit scalaire dans l'espace (partie2)</a><br>
-													<a href="#Rappel" onclick="loadInIframe('https://www.youtube.com/embed/tpmzOGSo-30?si=yfTIAryy6MmxFK-E')">- Vidéo 4: Comment trouver le centre et le rayon d'une sphere m&eacutethode 1</a><br>
-													</b>
-													<br>
-													<iframe id="Frame1" width="640" height="360" src="https://www.youtube.com/embed/L__igVGAb9o?si=kauuWNWqAvh0GoO7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-													<br><br>
+			<td></td><td><h3><u><center><br><font color="#000066"><p id="rcorners2">Chapitre 6: Les Fonctions exponentielles (Suite)</p></font></center></u></h3>
+										<hr>
+										<ul>
+											<br>
+											<li><b><h5>Les Fonctions Exponentielles - Domaine de d&eacutefinition:</h5></b>	
+												<iframe width="640" height="360" src="https://www.youtube.com/embed/gwX_8hZrF2c?si=YaEO3pnVCW2ZDLDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 											</li>
-											<h2 id="Exercices"></h2>
-											<li><b><font color="#FF0000">Exercices</sub></font></b>
-												<b>
-												<a href="#Exercices" onclick="loadInIframe2('https://www.youtube.com/embed/g-PiWxgSVyo?si=Db8oG_KTP8eDmNLs')">- Correction || Examen national 2022 </a>
-												</b>
-												<br>
-												<iframe id="Frame2" width="640" height="360" src="https://www.youtube.com/embed/g-PiWxgSVyo?si=Db8oG_KTP8eDmNLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-		<hr>										
-												
-		
-		<tr><td><center><a href="../../s2/chap8/chap8_1.html"><img src="../../../../../..//bg/precedent.gif" alt="suivant" width="40" height="40" align="center"></a></center></td><td><center><b><i>Page Pr&eacutec&eacutedente  //  Page suivante</b></i></center></td><td><center><a href="../chap10/chap10_1.html"><b><i><u>Chap 10</u></i></b><br><img src="../../../../../../bg/suivant.gif" alt="suivant" width="40" height="40" align="center"></a></center></td>	
+											<h2 id="exples"></h2>
+											<li><b><h5>Les Fonctions Exponentielles - Limites:</h5></b>		
+												<a href="#exples" onclick="loadInIframe('https://www.youtube.com/embed/rGJsDp0kxgQ?si=fC9WDzR00lgSGGzM')"><h6>- Exemple 1</a>
+												<a href="#exples" onclick="loadInIframe('https://www.youtube.com/embed/OhcJ6pHUiAs?si=4PLpJuCJh1evrTzO')">- Exemple 2</a>
+												<a href="#exples" onclick="loadInIframe('https://www.youtube.com/embed/N_LYVNDMKV8?si=xCwXEACrr2Tg4Ort')">- Exemple 3</a>
+												<a href="#exples" onclick="loadInIframe('https://www.youtube.com/embed/1mx7ERd2A2E?si=LynenPDzNL_jAmrv')">- Exemple 4</a>
+												<a href="#exples" onclick="loadInIframe('https://www.youtube.com/embed/Yq_RLI04xHs?si=guvPGAobDSdWHXdV')">- Exemple 5</a>
+												<a href="#exples" onclick="loadInIframe('https://www.youtube.com/embed/Wz_WRBR0JYs?si=NgirOvvbENWrnK6I')">- Exemple 6</a><br>
+												<a href="#exples" onclick="loadInIframe('https://www.youtube.com/embed/Gz1096nOL_w?si=sW3YXzHG-HmwJdOK')">- Exemple 7</a>
+												<a href="#exples" onclick="loadInIframe('https://www.youtube.com/embed/GIeRxtfz4J8?si=q_VGxmOvwUWDGsWM')">- Exemple 8</a>
+												<a href="#exples" onclick="loadInIframe('https://www.youtube.com/embed/--fmGO3W7no?si=BfP97oi8rxAEPo0U')">- Exemple 9</a>
+												<a href="#exples" onclick="loadInIframe('https://www.youtube.com/embed/_eFUvek5pkc?si=sW9C2f2BqWN8bm0Y')">- Exemple 10</a></h6>	
+												<iframe id="Exemples" width="640" height="360" src="https://www.youtube.com/embed/rGJsDp0kxgQ?si=fC9WDzR00lgSGGzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+											</li>
+											<br>
+											<li><b><h5>Fonctions Exponentielles - Parité:</h5></b>
+												<iframe width="640" height="360" src="https://www.youtube.com/embed/eQp6cgYFJws?si=i0Pcx8VC44d0EDGn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+											</li>
+											<br>
+											<li><b><h5>Fonctions Exponentielles - Centre de Symétrie d'une Courbe:</h5></b>	
+												<iframe width="640" height="360" src="https://www.youtube.com/embed/l2iQVdFsTLI?si=-QEQ0Sh5fzr_-JCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+											</li><br><hr>
+										</ul>
+				<td><center></center><br></td>							
+		</tr>
+		<tr><td><center><a href="../chap6/chap6_1.html"><img src="../../../../../..//bg/precedent.gif" alt="suivant" width="40" height="40" align="center"></a></center></td><td><center><b><i>Page Pr&eacutec&eacutedente  //  Page suivante</b></i></center></td><td><center><a href="../chap7/chap7_1.html"><b><i><u>Chap 7</u></i></b><br><img src="../../../../../../bg/suivant.gif" alt="suivant" width="40" height="40" align="center"></a></center></td>	
 	</table>
 
 	</body>
