@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Lycee En Ligne</title>
+
+        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+        <style>
+		html{line-height:1.15;-webkit-text-size-adjust:100%}
+		body{margin:0}
+		a{background-color:transparent}[hidden]{display:none}
+		html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,
+		video{max-width:100%;height:auto}
+		.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}
+		.bg-gray-100{--tw-bg-opacity: 1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}
+		.border-gray-200{--tw-border-opacity: 1;border-color:rgb(229 231 235 / var(--tw-border-opacity))}
+		.border-t{border-top-width:1px}
+		.flex{display:flex}
+		.grid{display:grid}
+		.hidden{display:none}
+		.items-center{align-items:center}
+		.justify-center{justify-content:center}
+		.font-semibold{font-weight:600}
+		.h-5{height:1.25rem}
+		.h-8{height:2rem}
+		.h-16{height:4rem}
+		.text-sm{font-size:.875rem}
+		.text-lg{font-size:1.125rem}
+		.leading-7{line-height:1.75rem}
+		.mx-auto{margin-left:auto;margin-right:auto}
+		.ml-1{margin-left:.25rem}
+		.mt-2{margin-top:.5rem}
+		.mr-2{margin-right:.5rem}
+		.ml-2{margin-left:.5rem}
+		.mt-4{margin-top:1rem}
+		.ml-4{margin-left:1rem}
+		.mt-8{margin-top:2rem}
+		.ml-12{margin-left:3rem}
+		.-mt-px{margin-top:-1px}
+		.max-w-6xl{max-width:72rem}
+		.min-h-screen{min-height:100vh}
+		.overflow-hidden{overflow:hidden}
+		.p-6{padding:1.5rem}
+		.py-4{padding-top:1rem;padding-bottom:1rem}
+		.px-6{padding-left:1.5rem;padding-right:1.5rem}
+		.pt-8{padding-top:2rem}
+		.fixed{position:fixed}
+		.relative{position:relative}
+		.top-0{top:0}
+		.right-0{right:0}
+		.shadow{--tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);--tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}
+		.text-center{text-align:center}
+		.text-gray-200{--tw-text-opacity: 1;color:rgb(229 231 235 / var(--tw-text-opacity))}
+		.text-gray-300{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity))}
+		.text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}
+		.text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}
+		.text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity))}
+		.text-gray-700{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity))}
+		.text-gray-900{--tw-text-opacity: 1;color:rgb(17 24 39 / var(--tw-text-opacity))}
+		.underline{text-decoration:underline}
+		.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+		.w-5{width:1.25rem}
+		.w-8{width:2rem}
+		.w-auto{width:auto}
+		.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}
+		.sm\:block{display:block}
+		.sm\:items-center{align-items:center}
+		.sm\:justify-start{justify-content:flex-start}
+		.sm\:justify-between{justify-content:space-between}
+		.sm\:h-20{height:5rem}
+		.sm\:ml-0{margin-left:0}
+		.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}
+		.sm\:pt-0{padding-top:0}
+		.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--tw-bg-opacity: 1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.dark\:bg-gray-900{--tw-bg-opacity: 1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.dark\:border-gray-700{--tw-border-opacity: 1;border-color:rgb(55 65 81 / var(--tw-border-opacity))}.dark\:text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.dark\:text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}}
+        </style>
+
+        <style>
+            body {
+                font-family: 'Nunito', sans-serif;
+            }
+			#rcorners1 {
+					border-radius: 15px;
+					background: #53c06a;
+					padding: 20px;
+					width: 800px;
+					height: 65px;
+				}
+			#rcorners2 {
+ 					border-radius: 15px;
+					background: #8f16f2;
+					padding: 20px;
+					width: 800px;
+					height: 65px;
+				} 
+			#rcorners3 {
+ 					border-radius: 15px;
+					background: #ffac13;
+					padding: 20px;
+					width: 800px;
+					height: 65px;
+				} 
+
+			.card {
+ 				 background: white;
+ 				 border-radius: 16px;
+ 				 padding: 25px;
+ 				 margin-bottom: 30px;
+ 				 box-shadow:2px 2px 5px rgb(191, 187, 187);
+				 margin-right: 12px;
+				}
+
+			.card h2 {
+				  margin-bottom: 20px;
+ 				color: #222;
+			}
+
+			.semestres {
+ 					 display: flex;
+ 					 flex-wrap: wrap;
+ 					 gap: 20px;
+					 padding: 10px;
+				}
+
+			.semestre {
+ 					flex: 1;
+ 					min-width: 200px;
+ 					background: rgb(172, 234, 193);
+  					padding: 15px;
+  					border-radius: 12px;
+
+				}
+			.s2spc {
+				margin-top: 10px;
+				border-radius: 10px;
+				background-color:#53c06a;
+				padding: 7px;
+			}
+			.s1spc {
+				margin-top: 10px;
+				border-radius: 10px;
+				background-color:#53c06a;
+				padding: 7px;
+			}
+			.semestre h3 {
+  					color: #ffffff;
+  					margin-bottom: 10px;
+					}
+			ul {
+  				list-style-type: disc;
+  				padding-left: 20px;
+				}
+
+			.youtube {
+ 				 margin-top: 15px;
+ 				 font-size: 0.9em;
+ 				 color: #555;
+				}
+
+			summary {
+      			font-style: italic;
+      			font-size: 16px;
+      			cursor: pointer;
+    		}
+			.sas{
+				font-style: italic;
+      			font-size: 16px;
+			}
+			body{
+				background-size: cover; 
+     			 background-repeat: no-repeat;
+     			 background-position: center;
+				border-radius: 20px;
+
+				padding: 15px;
+
+			}
+			img{
+				border-radius: 13px 14px 0 0;
+			}
+			table{
+				border-radius: 13px;
+				background-color: rgb(255, 255, 255);
+				
+			}
+			button{
+				border-style:solid;
+				border-radius: 28px;
+				background-color: gray;
+				padding: 17px;
+				margin: 15px;
+			}
+			.title{
+				background-color: #ffffff;
+			}
+			.zwa{
+				padding-top: 10px;
+
+				border-radius: 15px;
+				border-style: solid;
+			}
+			.s1lett{
+				margin-top: 10px;
+				border-radius: 10px;
+				background-color:#8f16f2;
+				padding: 7px;
+			}
+
+			.s2lett{
+				margin-top: 10px;
+				border-radius: 10px;
+				background-color:#8f16f2;
+				padding: 7px;
+			}
+			.s2compta{
+				margin-top: 10px;
+				border-radius: 10px;
+				background-color:#ffac13;
+				padding: 7px;
+			}
+
+			.s1compta{
+				margin-top: 10px;
+				border-radius: 10px;
+				background-color:#ffac13;
+				padding: 7px;
+			}
+
+			.Lettre {
+ 					flex: 1;
+ 					min-width: 200px;
+ 					background: #d8c1fd;
+  					padding: 15px;
+  					border-radius: 12px;
+
+				}
+
+			.Lettre h3 {
+  					color: #ffffff;
+  					margin-bottom: 10px;
+					}
+			.Compta h3 {
+  					color: #ffffff;
+  					margin-bottom: 10px;
+					}
+
+			.Compta{
+				flex: 1;
+ 				min-width: 200px;
+ 				background: #ffeab6;
+  				padding: 15px;
+  				border-radius: 12px;
+			}
+			.titre{
+      				text-align: center;    
+      				color: #2c3e50;              
+      				font-family: 'Arial', sans-serif; 
+      				text-shadow: 4px 4px 9px rgba(0,0,0,0.3);       				
+      				padding-bottom: 5px;       
+     				margin-top: 29px;          
+			}
+
+		.navbar {
+            display: flex;
+			justify-content: center;
+			align-items: center;
+            gap: 20px;               
+            padding: 15px;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown button {
+           
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 150px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            z-index: 1;
+			border-radius: 10px;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+			border-radius: 10px;
+        }
+        .dropdown-content a:hover {
+            background: #727477;
+			color: white;
+        }
+        .dropdown:hover .dropdown-content {
+            display:block;
+        }
+        a.btn {
+            background: #3184e4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+		.btn{
+			background-color: #2d8cf0;
+ 			color: white;
+  			padding: 10px 20px;
+  			border-radius: 25px;
+  			border: none;
+  			font-size: 16px;
+  			display: flex;
+  			align-items: center;
+  			justify-content: center;
+  			gap: 8px; 
+  			min-width: 140px; 
+  			height: 50px; 
+  			cursor: pointer;
+		}
+		.btn:hover{
+			padding: 15px 25px;
+		}
+        a.btn:hover {
+            background: #5da2f0;
+			padding: 15px 25px;
+			border-color: rgb(42, 41, 41);
+			border-style: solid;
+        }
+		
+		
+        </style>
+		<script>
+			window.onbeforeunload = function () {
+    		window.scrollTo(0, 0);
+  			};
+			
+  			function scrolloElement(duration = 1000) {
+    			const target = document.getElementById("rcorners3");
+    			if (!target) return;
+
+    			const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    			const startPosition = window.pageYOffset;
+    			const distance = targetPosition - startPosition;
+    			const startTime = performance.now();
+
+    			function animation(currentTime) {
+      				const timeElapsed = currentTime - startTime;
+      				const progress = Math.min(timeElapsed / duration, 1);
+      				window.scrollTo(0, startPosition + distance * progress);
+
+      				if (progress < 1) {
+        			requestAnimationFrame(animation);
+      				}
+    			}
+
+    		requestAnimationFrame(animation);
+  			}
+
+			function scrollToElemen(duration = 1000) {
+    			const target = document.getElementById("rcorners2");
+    			if (!target) return;
+
+    			const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    			const startPosition = window.pageYOffset;
+    			const distance = targetPosition - startPosition;
+    			const startTime = performance.now();
+
+    			function animation(currentTime) {
+      				const timeElapsed = currentTime - startTime;
+      				const progress = Math.min(timeElapsed / duration, 1);
+      				window.scrollTo(0, startPosition + distance * progress);
+
+      				if (progress < 1) {
+        			requestAnimationFrame(animation);
+      				}
+    			}
+
+    		requestAnimationFrame(animation);
+  			}
+
+			function scrolToElement(duration = 1000) {
+    			const target = document.getElementById("rcorners1");
+    			if (!target) return;
+
+    			const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    			const startPosition = window.pageYOffset;
+    			const distance = targetPosition - startPosition;
+    			const startTime = performance.now();
+
+    			function animation(currentTime) {
+      				const timeElapsed = currentTime - startTime;
+      				const progress = Math.min(timeElapsed / duration, 1);
+      				window.scrollTo(0, startPosition + distance * progress);
+
+      				if (progress < 1) {
+        			requestAnimationFrame(animation);
+      				}
+    			}
+
+    		requestAnimationFrame(animation);
+  			}
+		</script>
+
+    </head>
+<body background="bg/Green Simple Fresh Natural Background Wallpaper Image For Free Download - Pngtree.jpeg">
+	<table border=0 align=center width="1150">
+		<tr><td>
+		<tr><td>
+		<div class="title">
+			<div class="hedin">
+				<center><img src="bg/logoozte.png" alt="suivant" width="1150" height="115" align="center"></center>
+				<h2 class="titre"><center><font size=8><strong>Lyc&eacutee en ligne</strong></font></center></h2></div>
+				
+				<div class="navbar">
+					<a href="Acceuil.html" class="btn"><strong>Accueil</strong></a>
+					<div class="btn" align="center">
+					<div class="dropdown">
+        				<button class="btn"><strong>Filiere ▾</strong></button>
+        				<div class="dropdown-content">
+            				<a href="#rcorners1" onclick="scrolToElement()">2BAC SP et 2BAC SVT</a>
+            				<a href="#rcorners2" onclick="scrollToElemen()">2BAC Lettre et 2BAC SH</a>
+            				<a href="#rcorners3" onclick="scrolloElement()">2Bac Economie et 2BAC SGC</a>
+        				</div>
+    				</div>
+    				
+				</div>
+
+				
+			</div>
+		<div class="zwa">
+		<h3><font color="white"><center><p align="center" id="rcorners1">Filiere : 2BAC SP et 2BAC SVT</p></center></font></h3>
+		<ul>
+			
+				
+		<section class="card">
+  <h2>
+    <img src="bg/mathematiques.png" alt="Icône Math" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px; margin-bottom: 10px;">
+    Mathématiques
+  </h2>
+  <div class="semestres">
+    <div class="semestre">
+      <h3 class="s1spc"><center>Semestre 1</center></h3>
+      <div class="sas">
+        <ul>
+          <li><a href="matieres/2bac/math/2bacsx/s1/chap1/chap1_1.html">Continuité d’une fonction numérique</a></li>
+          <li><a href="matieres/2bac/math/2bacsx/s1/chap2/chap2_1.html">Dérivabilité – Fonctions primitives</a></li>
+          <li><a href="matieres/2bac/math/2bacsx/s1/chap3/chap3_1.html">Suites numériques</a></li>
+          <li><a href="matieres/2bac/math/2bacsx/s1/chap4/4_1.html">Fonctions logarithmiques</a></li>
+          <li><a href="matieres/2bac/math/2bacsx/s1/chap5/5_1.html">Nombres complexes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="semestre">
+      <h3 class="s2spc"><center>Semestre 2</center></h3>
+      <div class="sas">
+        <ul>
+          <li><a href="matieres/2bac/math/2bacsx/s2/chap6/chap6_1.html">Fonctions exponentielles</a></li>
+          <li><a href="matieres/2bac/math/2bacsx/s2/chap7/chap7_1.html">Calcul intégral</a></li>
+          <li><a href="matieres/2bac/math/2bacsx/s2/chap8/chap8_1.html">Équations différentielles</a></li>
+          <li><a href="matieres/2bac/math/2bacsx/s2/chap9/chap9_1.html">Géométrie dans l’espace</a></li>
+          <li><a href="matieres/2bac/math/2bacsx/s2/chap10/chap10_1.html">Calcul des probabilités</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="youtube">📺 <strong>Chaînes YouTube utilisées :</strong><br>
+    Maths variés, MathsClaires, Abdelhadi Zouhri, bacfacile, Chemins vers les maths,
+    <br> MIGROUNE Math, Math & Phys, biadmostafa, Yvan Monka, Aderdour Mustapha, Saïd Chermak
+  </p>
+</section>
+
+
+		<section class="card">
+      			  <h2>
+    <img src="bg/atomique.png" alt="Icône Math" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px; margin-bottom: 10px;">
+    Physique - Chimie
+  </h2>
+      				<div class="semestres">
+        				<div class="semestre">
+         					<h3 class="s1spc"><center>Physique</center></h3>
+								<div class="sas">
+          							<ul>
+            							<li><a href="matieres/2bac/pc/2bacsx/pc/chap1/chap1_1.html">Les Ondes Mecaniques</a></li>
+            							<li><a href="matieres/2bac/pc/2bacsx/pc/chap2/chap2_1.html">Transformations nucléaires</a></li>
+            							<li><a href="matieres/2bac/pc/2bacsx/pc/chap3/chap3_1.html">Électricité</a></li>
+            							<li><a href="matieres/2bac/pc/2bacsx/pc/chap4/chap4_1.html">Mécanique</a></li>
+          							</ul>
+								</div>
+        					</div>
+        				<div class="semestre">
+          					<h3 class="s2spc"><center>Chimie</center></h3>
+							<div class="sas">
+          						<ul>
+           							<li><a href="matieres/2bac/pc/2bacsx/chimie/chap1/chap1_1.html">Transformations rapides et lentes d'un système chimique</a></li>
+            						<li><a href="matieres/2bac/pc/2bacsx/chimie/chap1/chap1_2.html">Transformations non totales d'un système chimique</a></li
+            						<li><a href="matieres/2bac/pc/2bacsx/chimie/chap3/chap3_1.html">Sens d'évolution d'un système chimique</a></li>
+            						<li><a href="matieres/2bac/pc/2bacsx/chimie/chap4/chap4_1.html">Méthode de contôle de l'évolution des systèmes chimiques</a></li>
+          						</ul>
+        					</div>
+							</div>
+      					</div>
+				<p class="youtube">📺 <strong>Chaînes YouTube utilisées :</strong><br>
+				Prof bazhar, Top physique Chimie, Noureddine Physique, Zakaria Taoussi, Prof Essakhi, Comprendre la physique maria,<br> Prof Ridouan, Prof Harti.
+				 <br> </p>
+    	</section>
+		<section class="card">
+			<h2>
+    <img src="bg/sol-de-tanana.png" alt="Icône Math" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px; margin-bottom: 10px;">
+    Science de la vie et de la terre
+  </h2>
+      					
+      					<div class="semestres">
+        					<div class="semestre">
+          						<h3 class="s1spc"><center>Semestre 1</center></h3>
+								<div class="sas">
+          							<ul>
+
+
+											<li><p class="chapitre1"><strong><em></em></strong> <a href="matieres/2bac/svt/s1/chap1/chap1.html">Consommation de la matière organique et flux d’énergie </a></p></li>
+
+
+											<li><p class="chapitre1"><strong><em></em></strong> <a href="matieres/2bac/svt/s1/chap2/chap1.html"> Nature et mécanisme de l’expression du matériel génétique</a></p></li>
+
+											<li><p class="chapitre1"><strong><em></em></strong> <a href="matieres/2bac/svt/s1/chap3/chap1.html">Transfert de l’information génétique au cours de la reproduction sexuée</a></p></li>
+											
+
+            							
+								</div>
+        					</div>
+        					<div class="semestre">
+          						<h3 class="s2spc"><center>Semestre 2</center></h3>
+									<div class="sas">
+          							<ul>
+										
+											<li><p class="chapitre1"><strong><em></em></strong> <a href="matieres/2bac/svt/s2/chap1/chap1.html">Utilisation des matières organiques et inorganiques</a></p></li>
+											<li><p class="chapitre1"><strong><em></em></strong> <a href="matieres/2bac/svt/s2/chap2/chap1.html">Phénomènes géologiques accompagnant la formation des chaînes de montagnes et leur relation avec la tectonique des plaques</a></p></li>
+											
+          							</ul>
+									</div>
+        					</div>
+      					</div><br>
+				<p class="youtube">📺 <strong>Chaînes YouTube utilisées :</strong><br>
+				SVT MOUSSTAID, Prof Faress, Prof Elboukhari svt, Maison Des Sciences, Prof Wessal svt, Pr Ayyoub Lamsaf.<br>
+				 <br> </p>
+    	</section>
+				
+					
+				<h3><font color="white"><center><p align="center" id="rcorners2">Filiere : 2BAC Lettre et 2BAC SH</p></center></font></u></h3>
+				
+				<section class="card">
+					<h2>
+    <img src="bg/arabe.png" alt="Icône Math" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px; margin-bottom: 10px;">
+    Arabe
+  </h2>
+      					
+      					<div class="semestres">
+        					<div class="Lettre">
+          						<h3 class="s2lett"><center>الدورة التانية</center></h3>
+								<div class="sas" style="text-align: right;">
+          							<ul>
+								
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baclet\arabe\s1\doros\Chap1.html">الدروس اللغوية </a></p>
+								
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baclet\arabe\s1\nosos\Chap1.html"> دروس النصوص</p></a> 
+									
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\arabe\s1\t3bir\Chap1.html"> دروس التعبير والإنشاء</p></a>
+									
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\arabe\s1\mo2lafat\Chap1.html"> المؤلفات</p></a> 									
+									
+          							</ul>
+								</div>
+        					</div>
+							<div class="Lettre">
+          						<h3 class="s1lett"><center>الدورة الاولى</center></h3>
+								<div class="sas" style="text-align: right;">
+          							<ul>
+
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baclet\arabe\s1\doros\Chap1.html">الدروس اللغوية </a></p>
+								
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baclet\arabe\s1\nosos\Chap1.html"> دروس النصوص</p></a> 
+									
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\arabe\s1\t3bir\Chap1.html"> دروس التعبير والإنشاء</p></a>
+									
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\arabe\s1\mo2lafat\Chap1.html"> المؤلفات</p></a>
+											
+          							</ul>
+								</div>
+        					</div>
+      					</div><br>
+						<p class="youtube">📺 <strong>قنوات يوتيوب المستخدمة :</strong><br>
+				 . الأستاذ مصطفى السعيدي , abdelmajid ait abbou, Anissa Top Tv , Ncu wrffcvzc , فريق نافع خير <br>
+				 <br> </p>
+    			</section>
+				<section class="card">
+					<h2>
+    <img src="bg/etudes-sociales.png" alt="Icône Math" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px; margin-bottom: 10px;">
+    DS
+  </h2>
+      					<div class="semestres">
+        					<div class="Lettre">
+          						<h3 class="s2lett"><center>الدورة التانية</center></h3>
+								<div class="sas" style="text-align: right;">
+          							<ul>
+										<details>
+    										<summary>  : <em>التاريخ</em></summary>
+    										<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s2\tarikh\Chap1.html"> نظام القطبية الثنائية والحرب الباردة -</p></a>
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s2\tarikh\Chap2.html"> تصفية الاستعمار وبروز العالم الثالث - </p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s2\tarikh\Chap3.html"> النظام العالمي الجديد والقطبية الواحدة - </p></a>
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s2\tarikh\Chap4.html">ملف: الثورة العلمية والتكنولوجية - </p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s2\tarikh\Chap5.html"> المغرب: الكفاح من أجل الاستقلال واستكمال الوحدة الترابية - </p></a>
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s2\tarikh\Chap6.html"> الحركات الاستقلالية بالجزائر وتونس وليبيا - </p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s2\tarikh\Chap7.html"> الحركات الاستقلالية بالمشرق العربي - </p></a>
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s2\tarikh\Chap8.html"> القضية الفلسطينية والصراع العربي الإسرائيلي - </p></a>
+  										</details>
+										<details>
+    										<summary>  : <em>الجغرافيا</em></summary>
+    										<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baclet\ds\s2\joghrafia\Chap1.html"> الولايات المتحدة الأمريكية: قوة اقتصادية عظمى - </p></a>
+    										<p class="chapitre2"><strong><em></em></strong> <a href="matieres\2baclet\ds\s2\joghrafia\Chap2.html"> فرنسا: قوة فلاحية وصناعية كبرى في الاتحاد الأوربي - </p></a>
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baclet\ds\s2\joghrafia\Chap3.html"> اليابان: قوة تجارية كبرى - </p></a>
+    										<p class="chapitre2"><strong><em></em></strong> <a href="matieres\2baclet\ds\s2\joghrafia\Chap4.html">الصين: قوة اقتصادية صاعدة - </p></a>
+											<p class="chapitre1"><strong><em></em></strong>	<a href="matieres\2baclet\ds\s2\joghrafia\Chap5.html"> البرازيل: نمو اقتصادي واستمرار التفاوتات في التنمية البشرية -</p></a>
+    										<p class="chapitre2"><strong><em></em></strong> <a href="matieres\2baclet\ds\s2\joghrafia\Chap6.html"> كوريا الجنوبية: نموذج لبلد حديث النمو الإقتصادي - </p></a>
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baclet\ds\s2\joghrafia\Chap7.html"> الهند: أوجه متعددة للتنمية - </p></a>
+  										</details>
+          							</ul>
+									</div>
+        					</div>
+							<div class="Lettre">
+          						<h3 class="s1lett"><center>الدورة الاولى</center></h3>
+								<div class="sas" style="text-align: right;">
+          							<ul>
+										<details>
+    										<summary>  : <em>التاريخ</em></summary>
+    										<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\tarikh\Chap1.html"> العالم غداة الحرب العالمية الأولى - </p></a>
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\tarikh\Chap2.html"> الثورة الروسية وأزمات الديمقراطيات الليبرالية - </p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\tarikh\Chap3.html"> أزمة العالم الرأسمالي الكبرى لسنة 1929م - </p></a>
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\tarikh\Chap4.html"> الحرب العالمية الثانية 1939 – 1945م - </p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\tarikh\Chap5.html"> ملف: مساهمة المغاربة في الحرب العالمية الثانية - </p></a>
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\tarikh\Chap6.html"> المغرب تحت نظام الحماية - </p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\tarikh\Chap7.html"> المغرب: الاستغلال الاستعماري في عهد الحماية - </p></a>
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\tarikh\Chap8.html"> سقوط الإمبراطورية العثمانية وتوغل الاستعمار بالمشرق العربي - </p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\tarikh\Chap9.html"> القضية الفلسطينية: جذور القضية وأشكال التمركز الصهيوني - </p></a>
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\tarikh\Chap10.html">الوضع الدولي لمدينة طنجة في عهد الحماية - </p></a>
+  										</details>
+										<details>
+    										<summary>  : <em>الجغرافيا</em></summary>
+    										<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\joghrafia\Chap1.html"> العولمة: المفهوم، الآليات والفاعلون - </p></a> 
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\joghrafia\Chap2.html"> تنظيم المجال العالمي في إطار العولمة - </p></a> 
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\joghrafia\Chap3.html"> تفاوت النمو بين الشمال والجنوب: المجال المتوسطي نموذجا - </p></a> 
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\joghrafia\Chap4.html"> المجال العالمي والتحديات الكبرى: التحدي السكاني والتحدي البيئي - </p></a> 
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\joghrafia\Chap5.html"> العولمة والهوية الثقافية - </p></a> 
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\joghrafia\Chap6.html"> الاتحاد الأوربي: نحو اندماج شامل - </p></a> 
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\joghrafia\Chap7.html"> مجموعة أمريكا الشمالية: التبادل الحر والاندماج الجهوي - </p></a> 
+    										<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\joghrafia\Chap8.html"> دول جنوب شرق آسيا: قطب اقتصادي في تطور متصاعد - </p></a> 
+											<p class="chapitre2"><strong><em></em></strong><a href="matieres\2baclet\ds\s1\joghrafia\Chap9.html"> ملف: المنظمة العالمية للتجارة - </p></a> 
+
+  										</details>
+          							</ul>
+								</div>
+        					</div>
+      					</div>
+						<p class="youtube">📺 <strong>قنوات يوتيوب المستخدمة :</strong><br>
+				 . Driss DOTCOM , قناة المغراوي elmaghraoui channel , prof : Tammar , الاجتماعيات ببساطة, ADIL EL JRAOUY / عادل الجراوي .<br>
+				 <br> </p>
+    		</section>
+			<section class="card">
+				<h2>
+    <img src="bg/philosophie.png" alt="Icône Math" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px; margin-bottom: 10px;">
+    Philosophie
+  </h2>
+      				
+      					<div class="semestres">
+							<div class="Lettre">
+          						<h3 class="s1lett"><center>مجزوءة الوضع البشري</center></h3>
+								<div class="sas" style="text-align: right;">
+          							<ul><strong>
+            							<li><a href="matieres\2baclet\philo\wad3\Chap1.html"> الشخص</a></li>
+            							<li><a href="matieres\2baclet\philo\wad3\Chap2.html"> الغير</a></li>
+            							<li><a href="matieres\2baclet\philo\wad3\Chap3.html"> التاريخ</a></li></strong>
+          							</ul>
+								</div>
+        					</div>
+        					<div class="Lettre">
+          						<h3 class="s1lett"><center>مجزوءة السياسة </center></h3>
+								<div class="sas" style="text-align: right;">
+          							<ul><strong>
+            							<li><a href="matieres\2baclet\philo\siyasa\Chap1.html"> الدولة</a></li>
+            							<li><a href="matieres\2baclet\philo\siyasa\Chap2.html">العنف</a></li>
+            							<li><a href="matieres\2baclet\philo\siyasa\Chap3.html">الحق والعدالة</a></li></strong>
+          							</ul>
+								</div>
+        					</div>
+						</div><br><br>
+						<div class="semestres">
+							<div class="Lettre">
+          						<h3 class="s1lett"><center>مجزوءة المعرفة</center></h3>
+								<div class="sas" style="text-align: right;">
+          							<ul><strong>
+            							<li><a href="matieres\2baclet\philo\ma3rifa\Chap1.html"> النظرية والتجربة</a></li>
+            							<li><a href="matieres\2baclet\philo\ma3rifa\Chap2.html"> مسألة العلمية في العلوم الإنسانية</a></li>
+            							<li><a href="matieres\2baclet\philo\ma3rifa\Chap3.html"> الحقيقة</a></li></strong>
+          							</ul>
+								</div>
+        					</div>
+							<div class="Lettre">
+          						<h3 class="s1lett"><center>مجزوءة الأخلاق</center></h3>
+								<div class="sas" style="text-align: right;">
+          							<ul><strong>
+            							<li><a href="matieres\2baclet\philo\akhla9\Chap1.html">الواجب</a></li>
+            							<li><a href="matieres\2baclet\philo\akhla9\Chap2.html">السعادة</a></li>
+            							<li> <a href="matieres\2baclet\philo\akhla9\Chap3.html">الحرية</a></li></strong>
+          							</ul>
+								</div>
+        					</div>
+      					</div>
+						<p class="youtube">📺 <strong>قنوات يوتيوب المستخدمة :</strong><br>
+				 . لنفكر معا - الفلسفة ببساطة , Sohaib Lmouleh صهيب لمولح , PROF ADIL MOUAKITI .<br>
+				 <br> </p>
+    		</section>
+			<section class="card">
+				<h2>
+    <img src="bg/eng.png" alt="Icône Math" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px; margin-bottom: 10px;">
+    Anglais
+  </h2>
+
+      					<div class="semestres">
+        					<div class="Lettre">
+          						<h3 class="s1lett"><center>Units</center></h3>
+								<div class="sas">
+          							<ul><strong>
+										<li><a href="matieres\2baclet\anglais\units\Chap1.html">Unit 1 - Youth: Potential and Challenges</li></a>
+										<li><a href="matieres\2baclet\anglais\units\Chap2.html">Unit 2 - Humour</li></a>
+										<li><a href="matieres\2baclet\anglais\units\Chap3.html">Unit 3 - Education</li></a>
+										<li><a href="matieres\2baclet\anglais\units\Chap4.html">Unit 4 - Sustainable developement</li></a>
+										<li><a href="matieres\2baclet\anglais\units\Chap5.html">Unit 5 - Woman and Power</li></a>
+										<li><a href="matieres\2baclet\anglais\units\Chap6.html">Unit 6 - Culture</li></a>
+										<li><a href="matieres\2baclet\anglais\units\Chap7.html">Unit 7 - Citizenship</li></a>
+										<li><a href="matieres\2baclet\anglais\units\Chap8.html">Unit 8 - International Organizations</li></a>
+										<li><a href="matieres\2baclet\anglais\units\Chap9.html">Unit 9 - Science and Technology</li></a>
+										<li><a href="matieres\2baclet\anglais\units\Chap10.html">Unit 10 - Brain Drain</li></a></strong>
+          							</ul>
+								</div>
+        					</div>
+      					</div>
+						<p class="youtube">📺 <strong>قنوات يوتيوب المستخدمة :</strong><br>
+				  Sara English , English Spotlight ♡ , prof lydia , English with Ibtissame .<br>
+				 <br> </p>
+    		</section>
+			</ul>
+			<h3><font color="white"><center><p align="center" id="rcorners3">Filiere : 2Bac Economie et 2BAC SGC</p></center></font></u></h3>
+			<ul>
+			<section class="card">
+				<h2>
+    <img src="bg/comptabilite.png" alt="Icône Math" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px; margin-bottom: 10px;">
+    Comptabilité et Mathématique Financière
+  </h2>
+      				
+      					<div class="semestres">
+        					<div class="Compta">
+          						<h3 class="s1compta"><center>Semestre 1</center></h3>
+								<div class="sas">
+          							
+										<details>
+											<summary><em>Les Travaux D'inventaire </em>:</summary>
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baceco\compta\S1\Chap1.html"> 1 - Régularisations des stocks</a></p>
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baceco\compta\S1\Chap2.html"> 2 - Amortissements</a></p>
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baceco\compta\S1\Chap3.html"> 3 - Provisions</a></p>
+										</details>
+								</div>
+        					</div>
+        					<div class="Compta">
+          						<h3 class="s2compta"><center>Semestre 2</center></h3>
+								<div class="sas">
+          								<details>
+											<summary><em>Les Travaux D'inventaire </em>:</summary>
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baceco\compta\S2\chap1\Chap2.html"> 1 - Régularisation des charges et produits</a></p>
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baceco\compta\S2\chap1\Chap3.html"> 2 - L'impot sur les societes </a></p>
+										</details>
+										<details>
+											<summary><em>L'analyse Comptable </em>:</summary>
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baceco\compta\S2\chap2\Chap1.html"> 1 - Analyse du bilan</a></p>
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baceco\compta\S2\chap2\Chap2.html"> 2 - Analyse d'exploitation ESG</a></p>
+											<p class="chapitre1"><strong><em></em></strong> <a href="matieres\2baceco\compta\S2\chap2\Chap2.html"> 2 - Analyse d'exploitation TED</a></p>
+										</details>
+								</div>
+        					</div>
+      					</div>
+    		</section>
+			<section class="card">
+				<h2>
+    <img src="bg/dossier.png" alt="Icône Math" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px; margin-bottom: 10px;">
+    Organisation Administrative des Entreprises
+  </h2>
+      					
+      					<div class="semestres">
+        					<div class="Compta">
+          						<h3 class="s1compta"><center>Semestre 1</center></h3>
+								<div class="sas">
+									<ul>
+          								<details>
+											<summary><em><strong> La stratégie et la croissance </strong></em> :</summary>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S1\Chap1.html"> 1- Notion de stratégie</p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S1\Chap2.html"> 2- Planification stratégique</p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S1\Chap3.html"> 3- Options stratégiques</p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S1\Chap4.html"> 4- Croissance de l'entreprise</p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S1\Chap5.html"> 5- Concentration des entreprises</p></a>
+
+										</details>
+									</ul>
+								</div>
+        					</div>
+        					<div class="Compta">
+          						<h3 class="s2compta"><center>Semestre 2</center></h3>
+								<div class="sas">
+          							<ul>
+            							<details>
+											<summary><em><strong>La Gestion des Ressources Humaines (GRH) </em> :</strong></summary>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S2\Chap1.html"> 1- Les enjeux de la GRH</p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S2\Chap2.html"> 2- Les domaines de la GRH</p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S2\Chap3.html"> 3- Les relations humaines dans l'entreprise</p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S2\Chap4.html"> 4- Le recrutement</p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S2\Chap5.html"> 5- La formation</p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S2\Chap6.html"> 6- La gestion des carrières</p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S2\Chap7.html"> 7- Le plan social</p></a>
+											<p class="chapitre1"><strong><em></em></strong><a href="matieres\2baceco\orga\S2\Chap8.html"> 8- La rémunération</p></a>
+											
+										</details>
+          							</ul>
+								</div>
+        					</div>
+      					</div>
+    		</section>
+				
+			</ul>
+			<center><a href="https://www.compteurdevisite.com" title="compteur de visite"><img src="https://counter11.optistats.ovh/private/compteurdevisite.php?c=e5f9z5dgdhcafy3adtsjqrxl2ub2gt6e" border="0" title="compteur de visite" alt="compteur de visite"></a></center>
+
+
+			</td>
+			</tr>  
+			</div>
+</table>
+</ul>
+	
+	
+</body>
+</html>
