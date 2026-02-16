@@ -1,126 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Physique-Chimie 2 Bac Sx Chapitre 2</title>
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background: url('../../../../../../bg/Green Simple Fresh Natural Background Wallpaper Image For Free Download - Pngtree.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', sans-serif;
+            border-radius: 20px;
+            padding: 15px;
+        }
+        img{
+            border-radius: 13px 14px 0 0;
+        }
+        .chapitre-title {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background: #0bad26;
+            color: white;
+            border-radius: 20px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        iframe {
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .video-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .video-section h4 {
+            color: rgb(255, 0, 0);
+        }
+        .btn-link {
+            color: #0d6efd;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #856D4D;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            font-size: 16px;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .btn-link a {
+            text-align: center;
+            display: inline-block;
+            margin: 8px 5px;
+            color: #ff0000;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .btn-link a:hover {
+            border-bottom: 2px solid #ffd000;
+        }
+        .btn-link:hover{
+            background-color: #BBAE98;
+            color:white;
+            border-style: solid;
+            border-color: #000000;
+        }
+        .BTNCOUR{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #D1B606;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            font-size: 16px;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .BTNCOUR a {
+            text-align: center;
+            display: inline-block;
+            margin: 8px 5px;
+            color: #ff0000;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .BTNCOUR a:hover{
+            border-bottom: 2px solid #d4ce2a;
+        }
+        .BTNCOUR:hover{
+            background-color: #E7F00D;
+            color:white;
+            border-style: solid;
+            border-color: #000000;
+        }
+        .btncr{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #856D4D;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            font-size: 16px;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .BTNCR{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #D1B606;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            font-size: 16px;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            height: 50px;
+            cursor: pointer;
+        }
+        table td{
+            border-radius: 10px;
+        }
+        .titre{
+            text-align: center;
+            color: #2c3e50;
+            font-family: 'Arial', sans-serif;
+            text-shadow: 4px 4px 9px rgba(0,0,0,0.3);
+            padding-bottom: 5px;
+            margin-top: 29px;
+        }
+        hr.new3 {
+            border-top: 3px solid rgb(98, 213, 210);
+        }
+        .container{
+            width: 1150px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .img1{
+            margin-left: 1000px;
+        }
+        .navigation-arrows {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .navigation-arrows img {
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
 
-        <title>Physique-Chimie 2 Bac Sx Chap 1</title>
+    <script>
+        function loadInIframe1(url) {
+				document.getElementById('Frame1').src = url;
+			}
+        function loadInIframe2(url) {
+				document.getElementById('Frame2').src = url;
+			}
+        function loadInIframe3(url) {
+				document.getElementById('Frame3').src = url;
+			}
+        function loadInIframe4(url) {
+				document.getElementById('Frame4').src = url;
+			}
+    </script>
+</head>
+<body>
 
-        <!-- Fonts -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <div class="container">
+        <div class="text-center mb-4">
+            <img src="../../../../../../bg/logoozte.png" width="100%" height="115" alt="Logo">
+        </div>
+        <div class="titre">
+            <h2><center><font size=8><strong>Lycée en ligne</strong></font></center></h2>
+        </div>
+        <table border=0 bgcolor="11c0a8" width="100%" height="60" align="center">
+            <tr>
+                <td bgcolor="0400e3"><font color=FFFFFF size=4><center>Matière:</center></font></td>
+                <td><font color=FFFFFF size=4><center>Physique-Chimie</center></font></td>
+                <td bgcolor="0400e3"><font color=FFFFFF size=4><center>Niveau:</center></font></td>
+                <td><font color=FFFFFF size=4><center>2<sup>ème</sup> BAC SP et SVT</center></font></td>
+                <td bgcolor="0400e3"><center><a href="../../../../../../Projet.html"><img src="../../../../../../bg/accueil.png" alt="Accueil" width="40" height="40" title="Cliquez pour revenir à la page Précédente"></a></center></td>
+            </tr>
+        </table><br>
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity: 1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.border-gray-200{--tw-border-opacity: 1;border-color:rgb(229 231 235 / var(--tw-border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{--tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);--tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.text-center{text-align:center}.text-gray-200{--tw-text-opacity: 1;color:rgb(229 231 235 / var(--tw-text-opacity))}.text-gray-300{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity: 1;color:rgb(17 24 39 / var(--tw-text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--tw-bg-opacity: 1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.dark\:bg-gray-900{--tw-bg-opacity: 1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.dark\:border-gray-700{--tw-border-opacity: 1;border-color:rgb(55 65 81 / var(--tw-border-opacity))}.dark\:text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.dark\:text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}}
-        </style>
+        <div class="chapitre-title"><h4>Chapitre 3 : L'électricité</h4></div>
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            	}
-			p.solid {
-					border-style: solid;
-					border: 2px solid #032a72;
-					width: 645px;
-					height: 365px;
-					}
-			
-			#rcorners1 {
-					border-radius: 25px;
-					background: #73AD21;
-					padding: 20px;
-					width: 600px;
-					height: 80px; }
-			#rcorners2 {
- 					border-radius: 25px;
-  					border: 2px solid #2146ad;
-  					padding: 20px;
-  					width: 630px;
-					height: 80px;} 
-			hr.new3 {
- 					border-top: 3px dotted red;
-					}
-        </style>
+        <div class="video-section">
+            <h4 class="vid" id="Partie1"><u>1 - Dipole RC :</u></h4><br>
+            <a href="#Partie1" class="BTNCOUR" onclick="loadInIframe1('https://www.youtube.com/embed/kzF1OzfrQ2w?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT')">- Cours</a><br><br>
+            <a  class="btncr">- Exercices :</a>
+            <a href="#Partie1" class="btn-link" onclick="loadInIframe1('https://www.youtube.com/embed/u-AO1VIa04A?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT')"> Série 1</a><br><br>
+            <iframe id="Frame1" width="100%" height="430" class="mt-3" src="https://www.youtube.com/embed/kzF1OzfrQ2w?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT" allowfullscreen></iframe>
+        </div>
 
-	<script>
-		function loadInIframe(url) {
-			document.getElementById('Frame1').src = url;
-		}	
-		function loadInIframe2(url) {
-			document.getElementById('Frame2').src = url;
-		}
-		function loadInIframe3(url) {
-			document.getElementById('Frame3').src = url;
-		}		
-				
-	</script>
+        <div class="video-section">
+            <h4 id="Partie2"><u>2 - Dipole RL :</u></h4><br>
+            <a href="#Partie2" class="BTNCOUR" onclick="loadInIframe2('https://www.youtube.com/embed/toQhGoMQdE8?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT')">- Cours</a> <br><br>
+            <a  class="btncr">- Exercices :</a>
+            <a href="#Partie2" class="btn-link" onclick="loadInIframe2('https://www.youtube.com/embed/X5IydspngJE?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT')"> Série 1</a> <br><br>
+            <iframe id="Frame2" width="100%" height="430" class="mt-3" src="https://www.youtube.com/embed/toQhGoMQdE8?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT" allowfullscreen></iframe>
+        </div>
 
-    </head>
-	<body background="../../../../../../bg/bg1.avif">
-    <center><img src="../../../../../../bg/logoozte.png" alt="logoozte" width="870" height="90" align="center"></center>
-	<br>
-    <table border=1 align=center bgcolor="007700" width="870" height="40" align="center">
-        <tr>
-            <td bgcolor="007777"><font color=FFFFFF size=5><center>Mati&egravere:</center></font></td><td><font color=FFFFFF size=5> <center>Physique-Chimie</center></font></td><td bgcolor="007777"><font color=FFFFFF size=5><center>Niveau:</center></font></td><td><font color=FFFFFF size=5><center>2<sup>eme</sup> BAC SP et SVT</center></font></td><td><center><a href="../../../../../../index.html"><img src="../../../../../../bg/accueil.avif" alt="Accueil" width="40" height="40"></a></center></td>
-        </tr>
-    </table>
-	<br>
-	<table border=1 align=center bgcolor="ffffff">
-		<tr BGCOLOR=000077>
-			<td><center><font color="#FFFFFF" size=5>S&eacuteance</font></center></td><td><center><font color="#FFFFFF" size=5>Contenu</font></center></td><td><center><font color="#FFFFFF" size=5>Remarque</font></center></td>
-		</tr>
-		<tr>
-			<td></td><td><h3><u><center><br><font color="#000066"><p id="rcorners2">Chapitre 03: Eléctricité</p></font></center></u></h3>
-				<hr class="new3"><h2 id="DRL"></h2><br>
-											
-									<ul>
-											<li><b><font color="#FF0000">Dipôle RL:</font></b><br><br>
-												<b>
-													<a href="#DRL" onclick="loadInIframe('https://www.youtube.com/embed/PhcFi0v1fI8?si=sNqSrA4nTc5A3wFn')"><font color="#0000FF">- Cours: Partie1</font></a> 
-													<a href="#DRL" onclick="loadInIframe('https://www.youtube.com/embed/kHCNep8J6gU?si=frUXd37OMX6IkVlA')"><font color="#0000FF">- Partie2</font></a> 
-													<a href="#DRL" onclick="loadInIframe('https://www.youtube.com/embed/UqnNVhytIv4?si=uMtvMY2wGskL3Tb-')"><font color="#0000FF">- Partie3</font></a>
-													<br>
-													
-													<a href="#DRL" onclick="loadInIframe('https://www.youtube.com/embed/aVErC9CPdTE?si=2jW02GtRWdhtpqqW')"> <font color="#0000FF">- Exercice: Serie1</font></a>
-													<a href="#DRL" onclick="loadInIframe('https://www.youtube.com/embed/DRlAFRLI7Mc?si=NQr7Og-5e76Z-qiB')"> <font color="#0000FF">- Serie2</font>  </a>
-													</b>
-													<br>
-													<p class="solid"><iframe id="Frame1" width="640" height="360" src="https://www.youtube.com/embed/PhcFi0v1fI8?si=sNqSrA4nTc5A3wFn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-												<br>	
-											</li>
-											<h2 id="DRLC"></h2>
-											<li><b><font color="#FF0000">Dipôle RLC:</font></b><br><br>
-												<b>
-													<a href="#DRLC" onclick="loadInIframe2('https://www.youtube.com/embed/e5ozae-PQ-8?si=0_M2FO3VX6JtdoOL')"><font color="#0000FF">- Cours: Partie1</font></a>
-													<a href="#DRLC" onclick="loadInIframe2('https://www.youtube.com/embed/XfxCotbqdE0?si=tVK5Rdbf2EdYBB6Z')"> <font color="#0000FF">- Partie2</font></a>
-													<a href="#DRLC" onclick="loadInIframe2('https://www.youtube.com/embed/N7Qd-QMoO2o?si=01b5iwxivwuSfGto')"> <font color="##0000FF">- Partie3</font> - </a><br>
-													<a href="#DRLC" onclick="loadInIframe2('https://www.youtube.com/embed/VDhIbpRk_rk?si=uZbPoq_8Wv11HmoW')"> <font color="##0000FF">- Exercices: Serie1</font></a>
-													</b>
-													<br>
-													<p class="solid"><iframe id="Frame2" width="640" height="360" src="https://www.youtube.com/embed/e5ozae-PQ-8?si=0_M2FO3VX6JtdoOL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-													
-											</li>
-											<h2 id="MA"></h2>
-											<li><b><font color="#FF0000">Modulation d'amplitude:</font></b><br><br>
-												<b>
-													<a href="#MA" onclick="loadInIframe3('https://www.youtube.com/embed/id2fjtt5ihI?si=TmATD9W8tRC-uFhr')"><font color="#0000FF">- Cours: Partie1</font></a> 
-													<a href="#MA" onclick="loadInIframe3('https://www.youtube.com/embed/xWiz9EdLxhA?si=4poPYG2d7QX_WISj')"><font color="#0000FF">- Partie2</font></a> 
-													<br>
-													
-													<a href="#MA" onclick="loadInIframe3('https://www.youtube.com/embed/rdFg9N0fkoM?si=Ttt18WYrfRgQV31A')"> <font color="#0000FF">- Exercice: Serie1</font></a>
-													</b>
-													<br>
-													<p class="solid"><iframe id="Frame3" width="640" height="360" src="https://www.youtube.com/embed/id2fjtt5ihI?si=TmATD9W8tRC-uFhr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-												<br>	
-											</li>
-											
-													<hr class="new3">										
-										</ul>
-				<td></td>							
-		</tr>
-		<tr><td><center><a href="../chap1/chap1_1.html"><img src="../../../../../..//bg/precedent.gif" alt="suivant" width="40" height="40" align="center"></a></center></td><td><center><b><i>Page suivante</b></i></center></td><td><center><a href="../chap4/chap4_1.html"><b><i><u>Chap 4</u></i></b><br><img src="../../../../../../bg/suivant.gif" alt="suivant" width="40" height="40" align="center"></a></center></td>	
-		
-	</table>
+        <div class="video-section">
+            <h4 id="Partie3"><u>3 - Oscillations libres dans RLC en série :</u></h4><br>
+            <a  class="BTNCR">- Cours :</a>
+            <a href="#Partie3" class="BTNCOUR" onclick="loadInIframe3('https://www.youtube.com/embed/yy6Zpby8EeE?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT')"> Partie 1</a> 
+            <a href="#Partie3" class="BTNCOUR" onclick="loadInIframe3('https://www.youtube.com/embed/-g0ngfplRNs?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT')"> Partie 2</a><br><br>
+            <a class="btncr">- Exercices :</a>
+            <a href="#Partie3" class="btn-link" onclick="loadInIframe3('https://www.youtube.com/embed/A94oaKLB5u4?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT')"> Série 1</a><br><br>
+            <iframe id="Frame3" width="100%" height="430" class="mt-3" src="https://www.youtube.com/embed/yy6Zpby8EeE?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT" allowfullscreen></iframe>
+        </div>
 
-	</body>
-</Html>
+        <div class="video-section">
+            <h4 id="Partie4"><u>4 -  Modulation d’amplitude :</u></h4><br>
+            <a  class="BTNCR">- Cours :</a>
+            <a href="#Partie4" class="BTNCOUR" onclick="loadInIframe4( 'https://www.youtube.com/embed/BwdjjTcwJSQ?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT')"> Partie 1</a> 
+            <a href="#Partie4" class="BTNCOUR" onclick="loadInIframe4( 'https://www.youtube.com/embed/2u5sGb7IE88?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT')"> Partie 2</a><br><br>
+            <a class="btncr">- Exercices :</a>
+            <a href="#Partie4" class="btn-link" onclick="loadInIframe4('https://www.youtube.com/embed/OnrGhsl72QM?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT')"> Série 1</a><br><br>
+            <iframe id="Frame4" width="100%" height="430" class="mt-3" src="https://www.youtube.com/embed/BwdjjTcwJSQ?list=PLEgI-hpzTOt1C9iM0tsGb0dj6Fnfk4KwT" allowfullscreen></iframe>
+        </div>
+
+        <hr class="new3">
+
+        <div class="navigation-arrows">
+            <a href="../chap2/chap2_1.html"><img src="../../../../../../bg/fleche-gauche.png" alt="Précédent" width="40" title="Page Précédente" ></a>
+
+            <a href="../chap4/chap4_1.html"><img src="../../../../../../bg/fleche-droite.png" alt="Suivant" class="img1" width="40" title="Page Suivante"><br><b></b></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
