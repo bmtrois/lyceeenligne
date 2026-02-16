@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lycée en ligne</title>
+  <style>
+    body {
+      color: #333;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 15px;
+      border-radius: 20px;
+     	background-repeat: no-repeat;
+     	background-position: center;
+		
+    }
+
+    header {
+      background: #3a95df;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ecf0f1;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .klx {
+      width: 1150px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(13, 13, 13, 0.1);
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: 40px auto;
+      padding: 0 20px;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: #cdc7c7;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      flex: 1 1 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #000000;
+      margin-top: 40px;
+    }
+
+    .titre {
+      text-align: center;
+      color: #2c3e50;
+      font-family: 'Arial', sans-serif;
+      text-shadow: 4px 4px 9px rgba(0,0,0,0.3);
+      padding-bottom: 5px;
+      margin-top: 29px;
+    }
+
+    .card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      flex: 1 1 250px;
+      max-width: 300px;
+    }
+    .navbar {
+            display: flex;
+			justify-content: center;
+			align-items: center;
+            gap: 20px;               
+            padding: 15px;
+        }
+
+    a.btn {
+            background: #3184e4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+		.btn{
+			background-color: #2d8cf0;
+ 			color: white;
+  			padding: 8px 18px;
+  			border-radius: 25px;
+  			border: none;
+  			font-size: 16px;
+  			display: flex;
+  			align-items: center;
+  			justify-content: center;
+  			gap: 8px; 
+  			min-width: 140px; 
+  			height: 30px; 
+  			cursor: pointer;
+		}
+		.btn:hover{
+			padding: 12px 20px;
+		}
+        a.btn:hover {
+            background: #5da2f0;
+			padding: 12px 20px;
+			border-color: rgb(42, 41, 41);
+			border-style: solid;
+        }
+  </style>
+</head>
+<body background="bg/Green Simple Fresh Natural Background Wallpaper Image For Free Download - Pngtree.jpeg">
+
+<div class="klx">
+  <div class="text-center mb-4">
+    <img src="bg/logoozte.png" width="1150" height="115" alt="Logo">
+  </div>
+
+  <div class="titre">
+    <h2><center><font size=8><strong>Lycée en ligne</strong></font></center></h2><br>
+  </div>
+
+  <header>
+    <nav>
+      <h2>À propos de notre plateforme</h2>
+    <p>
+      Bienvenue sur <strong>Lycée en ligne</strong>, votre partenaire éducatif dédié aux élèves de la 2ème année du Baccalauréat. 
+      Notre mission est simple : <em>vous aider à réussir votre Bac</em> en mettant à votre disposition des ressources complètes et accessibles pour chaque filière.
+    </p>
+
+    <p>
+      Que vous soyez en Sciences expérimentales, Lettres, ou Économie, notre site vous propose des cours, des exercices corrigés, ainsi que des liens vers des chaînes éducatives pour approfondir vos connaissances.
+    </p>
+
+    <p>
+      Notre équipe pédagogique et technique travaille sans relâche pour vous offrir un contenu de qualité, actualisé régulièrement, afin de répondre au mieux à vos besoins.
+    </p>
+     </nav>
+  </header>
+
+  <div class="container">
+    <h3><strong>📝 Choisissez votre filière ci-dessous pour commencer !</strong></h3>
+    <h4>Afin de vous proposer des ressources adaptées à vos besoins,
+       nous vous invitons à sélectionner votre filière.
+       Que vous soyez en sciences expérimentales, sciences économiques, lettres ou techniques,
+       cliquez simplement sur votre spécialité pour accéder à des cours,
+       exercices et supports conçus spécialement pour vous. Bonne exploration et excellente préparation !</h4>
+    <br>
+
+    <div class="cards">
+      <a href="Projet.html#rcorners1" class="card-link">
+        <div class="card">
+          <h2>📐 2BAC SP et 2BAC SVT</h2>
+          <p>Explore les cours et exercices pour préparer les épreuves du Bac en mathématiques, physique, chimie et SVT avec des ressources interactives.</p>
+        </div>
+      </a>
+
+      <a href="Projet.html#rcorners2" class="card-link">
+        <div class="card">
+          <h2>📚 2BAC Lettre et 2BAC SH</h2>
+          <p>Former les élèves à l'analyse, à la synthèse, et à une compréhension approfondie des phénomènes humains dans leurs dimensions sociales, historiques.</p>
+        </div>
+      </a>
+
+      <a href="Projet.html#rcorners3" class="card-link">
+        <div class="card">
+          <h2>📊 2BAC Economie et 2BAC SGC</h2>
+          <p>Approfondir les connaissances en économie, statistiques, et mathématiques appliquées, tout en développant des compétences analytiques et critiques.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Lycée en ligne - Tous droits réservés
+  </footer>
+</div>
+
+</body>
+</html>
