@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Physique-Chimie 2 Bac Sx Chapitre 1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+		img{
+			border-radius: 13px 14px 0 0;
+		}
+        .chapitre-title {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background: #0bad26;
+            color: white;
+            border-radius: 20px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .video-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .video-section h4 {
+            color: rgb(255, 0, 0);
+			
+        }
+
+        .btn-link {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        hr.new3 {
+            border-top: 3px solid rgb(98, 213, 210);
+        }
+		.container{
+   			width: 1150px;
+    		margin: 0 auto; 
+    		background-color: white;
+    		padding: 30px;
+    		border-radius: 16px;
+    		box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+		}
+		.img1{
+			margin-left: 1000px;
+		}
+        table {
+            border-radius: 20px;
+            font-weight: bold;
+            padding: 20px;
+            margin: 30px auto;
+            width: 100%;
+            color: white;
+            
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        table p {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+            }
+        .matiere {
+            color: #ffffff; 
+            font-weight: bold;
+        }
+
+        .niveau {
+            color: #28a745; 
+            font-weight: bold;}
+        
+        .vid{
+            color: #e60000;
+            font-size: 1.6em;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 15px;
+        }
+        .btn-link {
+            text-align: center;
+           text-decoration: none;
+            background-color: #856D4D;
+ 			color: white;
+  			padding: 10px 20px;
+  			border-radius: 25px;
+  			border: none;
+  			font-size: 16px;
+  			align-items: center;
+  			justify-content: center;
+  			gap: 8px; 
+  			height: 50px; 
+  			cursor: pointer;
+        }
+
+        .btn-link a {
+            text-align: center;
+            display: inline-block;
+            margin: 8px 5px;
+            color: #ff0000;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .btn-link a:hover {
+            border-bottom: 2px solid #ffd000;
+        }
+        .btn-link:hover{
+            background-color: #BBAE98;
+            color:white;
+            border-style: solid;
+            border-color: #000000;
+        }
+        
+        .BTNCOUR{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #D1B606;
+ 			color: white;
+  			padding: 10px 20px;
+  			border-radius: 25px;
+  			border: none;
+  			font-size: 16px;
+  			align-items: center;
+  			justify-content: center;
+  			gap: 8px; 
+  			height: 50px; 
+  			cursor: pointer;
+        }
+        .BTNCOUR a {
+            text-align: center;
+            display: inline-block;
+            margin: 8px 5px;
+            color: #ff0000;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .BTNCOUR a:hover{
+            border-bottom: 2px solid #d4ce2a;
+        }
+        .BTNCOUR:hover{
+            background-color: #E7F00D;
+            color:white;
+            border-style: solid;
+            border-color: #000000;
+        }
+        .btncr{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #856D4D;
+ 			color: white;
+  			padding: 10px 20px;
+  			border-radius: 25px;
+  			border: none;
+  			font-size: 16px;
+  			align-items: center;
+  			justify-content: center;
+  			gap: 8px; 
+  			height: 50px; 
+  			cursor: pointer;
+        }
+
+        .BTNCR{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #D1B606;
+ 			color: white;
+  			padding: 10px 20px;
+  			border-radius: 25px;
+  			border: none;
+  			font-size: 16px;
+  			align-items: center;
+  			justify-content: center;
+  			gap: 8px; 
+  			height: 50px; 
+  			cursor: pointer;
+        }
+        table td{
+            border-radius: 10px;
+        }
+       .titre{
+            text-align: center;    
+      	    color: #2c3e50;              
+      	    font-family: 'Arial', sans-serif; 
+      	    text-shadow: 4px 4px 9px rgba(0,0,0,0.3);       				
+      	    padding-bottom: 5px;       
+     	    margin-top: 29px; 
+        }
+    </style>
+
+    <script>
+function loadInIframe1(url) {
+				document.getElementById('Frame1').src = url;
+			}
+        function loadInIframe2(url) {
+				document.getElementById('Frame2').src = url;
+			}
+        function loadInIframe3(url) {
+				document.getElementById('Frame3').src = url;
+			}
+        function loadInIframe4(url) {
+				document.getElementById('Frame4').src = url;
+			}
+    function loadInIframe5(url) {
+				document.getElementById('Frame5').src = url;
+			}
+    </script>
+</head>
+    <body background="../../../../../bg/Green Simple Fresh Natural Background Wallpaper Image For Free Download - Pngtree.jpeg">
+
+    <div class="container">
+        <div class="text-center mb-4">
+            <img src="../../../../../bg/logoozte.png" width="100%" height="115" alt="Logo">
+        </div>
+        <div class="titre">
+                    <h2><center><font size=8><strong>Lyc&eacutee en ligne</strong></font></center></h2>
+        </div>
+    <table border=0 bgcolor="11c0a8" width="100%" height="60" align="center">
+        <tr>
+            <td bgcolor="0400e3"><font color=FFFFFF size=4><center>Mati&egravere:</center></font></td><td><font color=FFFFFF size=4> <center>Science De vie et de Terre</center></font></td><td bgcolor="0400e3"><font color=FFFFFF size=4><center>Niveau:</center></font></td><td><font color=FFFFFF size=4><center>2<sup>eme</sup> BAC SP et SVT</center></font></td><td bgcolor="0400e3"><center><a href="../../../../../Projet.html"><img src="../../../../../bg/accueil.png" alt="Accueil" width="40" height="40" title="Cliquez pour revenir à la page Précédente"></a></center></td>
+        </tr>
+    </table><br>
+
+        <div class="chapitre-title"> <h4>Chapitre 2: Phénomènes géologiques accompagnant la formation des chaînes de montagnes et leur relation avec la tectonique des plaques </h3> </div>
+        <div class="video-section">
+            <h4 class="vid" id="Partie1" ><u>1 - Rappel de géologie :</u></h4><br>
+            <a href="#Partie1" class="BTNCOUR" onclick="loadInIframe1('https://www.youtube.com/embed/hX-iMNNiUD4?si=hNqEOR22W6r7mVXY')"><font color="#FFFFFF">Rappel </font></a> <br>
+			</b>
+			<br>
+			<p class="solid"><iframe id="Frame1" width="100%" height="430" class="mt-3" src="https://www.youtube.com/embed/hX-iMNNiUD4?si=hNqEOR22W6r7mVXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+        </div>
+
+
+        <div class="video-section">
+            <h4 id="Partie2"><u>2 - Les caractéristiques structurales et pétrographiques des chaînes de montagnes récentes :</u></h4><br>
+
+			<a href="#Partie2" class="BTNCOUR" onclick="loadInIframe2('https://www.youtube.com/embed/8xhMuqMJARU?si=IU2pNi4F0P-Biles')"><font color="#FFFFFF">Cours </font> </a><br><br>
+			<a href="#Partie2" class="btn-link" onclick="loadInIframe2('https://www.youtube.com/embed/DdufeAWklAU?si=EcFQ0U9KQc2axhwq')"> <font color="#FFFFFF"></font>Exercice  </a>
+			</b>
+			<br>
+			<p class="solid"><iframe id="Frame2" width="100%" height="430" class="mt-3" src="https://www.youtube.com/embed/8xhMuqMJARU?si=IU2pNi4F0P-Biles" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+	
+        </div>
+
+        <div class="video-section">
+            <h4 id="Partie3"><u>3 - Les déformations tectoniques accompagnants la formation des chaînes de montagnes :</u></h4><br>
+
+			<a href="#Partie3" class="BTNCOUR" onclick="loadInIframe3('https://www.youtube.com/embed/Kg03P6a6M44?si=yDE8tlue5q_E8RGF')"><font color="#FFFFFF">Cours </font> </a><br><br>
+			<a href="#Partie3" class="btn-link" onclick="loadInIframe3('https://www.youtube.com/embed/bImcQgWc-Mk?si=aKfSgowMd1z-7qk6')"> <font color="#FFFFFF"></font>Exercice  </a>
+			</b>
+			<br>
+			<p class="solid"><iframe id="Frame3" width="100%" height="430" class="mt-3" src="https://www.youtube.com/embed/Kg03P6a6M44?si=yDE8tlue5q_E8RGF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+        </div>
+
+        <div class="video-section">
+            <h4 id="Partie4"><u>4 - Le métamorphisme et sa relation avec la tectonique des plaques :</u></h4><br>
+
+			<a href="#Partie4" class="BTNCOUR" onclick="loadInIframe4('https://www.youtube.com/embed/NJDzmjV5l7g?si=pvRdivuXYLWsKJAM')"><font color="#FFFFFF">Cours </font> </a><br><br>
+			<a href="#Partie4" class="btn-link" onclick="loadInIframe4('https://www.youtube.com/embed/Cb5L0ZCVjfo?si=S8o-jG1UnrbIQXOk')"> <font color="#FFFFFF"></font>Exercice  </a>
+			</b>
+			<br>
+			<p class="solid"><iframe id="Frame4" width="100%" height="430" class="mt-3" src="https://www.youtube.com/embed/NJDzmjV5l7g?si=pvRdivuXYLWsKJAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+	        </div>
+
+        <div class="video-section">
+            <h4 id="Partie5"><u>5 - La granitisation et sa relation avec le métamorphisme :</u></h4><br>
+
+			<a href="#Partie5" class="BTNCOUR" onclick="loadInIframe5('https://www.youtube.com/embed/at2-VHGGnKw?si=LWI59W6YdHDkxY4Y')"><font color="#FFFFFF">Cours </font> </a><br>
+			</b>
+			<br>
+			<p class="solid"><iframe id="Frame5" width="100%" height="430" class="mt-3" src="https://www.youtube.com/embed/at2-VHGGnKw?si=LWI59W6YdHDkxY4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+        </div>
+
+        <hr class="new3">
+          
+            <a href="../../s2/chap1/Chap1.html"><img src="../../../../../bg/fleche-gauche.png" alt="Précédent" width="40" title="Page Précédente" ></a>
+
+        </div>
+    </div>
+
+</body>
+</html>
